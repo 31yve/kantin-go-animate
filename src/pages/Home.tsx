@@ -155,7 +155,14 @@ export const Home: React.FC = () => {
                 layout
               >
                 <MenuCard
-                  {...item}
+                  id={item.id}
+                  name={item.name}
+                  description={item.description}
+                  price={item.price}
+                  image={item.image}
+                  rating={item.rating}
+                  tags={item.tags}
+                  inStock={item.inStock}
                   isFavorite={favorites.includes(item.id)}
                   onAddToCart={handleAddToCart}
                   onToggleFavorite={handleToggleFavorite}
